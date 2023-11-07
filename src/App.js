@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import WIP from './assets/WIP.png'
+import WIP from './assets/png/WIP.png'
 import Nav from './components/nav/Nav';
 
 

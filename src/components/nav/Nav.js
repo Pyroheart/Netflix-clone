@@ -1,5 +1,5 @@
 import "./nav.css"
-import WIP from '../../assets/WIP.png'
+import WIP from '../../assets//png/WIP.png'
 
 function Nav() {
             <div className='inner-container'>
