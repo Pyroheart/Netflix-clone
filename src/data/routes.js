@@ -1,5 +1,5 @@
 const routes = {
-    profile: "/profiles",
+    profile: "/selectProfile",
     browse: "/browse",
 }
 
