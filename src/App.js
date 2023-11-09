@@ -1,17 +1,18 @@
-import React from 'react';
 import './App.css';
-import WIP from './assets/png/WIP.png'
-import Nav from './components/nav/Nav';
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
+import MainPage from './MainPages/landingPage';
+import ManageProfile from './MainPages/manageProfile';
 
 function App() {
   return (
-    <div className="app">
-      <Nav/>
-      <p>yo</p>
-      <img src={WIP} alt="WIP"/>
-    </div>
-    
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Navigate replace to="/selectProfile" />} />
+        <Route path="/selectProfile" element={<ManageProfile />} />
+        <Route path="/browse" element={<MainPage />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
