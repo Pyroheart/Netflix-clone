@@ -10,19 +10,19 @@ const profiles = [
         resource: ProfileIcon1
     },
     {
-        name: "KID",
+        name: "Sam",
         resource: ProfileIcon2
     },
     {
-        name: "Santosh",
+        name: "Cactus",
         resource: ProfileIcon3
     },
     {
-        name: "Aaleen",
+        name: "Lo",
         resource: ProfileIcon4
     },
     {
-        name: "Shub's",
+        name: "skons",
         resource: ProfileIcon5
     }
 ]
