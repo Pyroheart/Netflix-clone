@@ -26,13 +26,13 @@ function Navbar({selectedProfile}) {
     return (
         <div className={`container-navbar ${offset > 30 && `after-scroll`}`}>
             <div className='inner-container'>
-                <a href="#browse"><img className='netflix-logo' alt="netflix logo" src={NetflixLogo} aria-label="TopPage" tabindex="1"/></a>
+                <a href="#browse"><img className='netflix-logo' alt="netflix logo" src={NetflixLogo} aria-label="TopPage" tabIndex="1"/></a>
                 {screenSize.width > 640 ?
-                    arrOptions.map((element, index) => <h5 className="arrOptionsHover" tabindex={index+1} style={{ paddingLeft: 16, color: index === 0 ? 'white' : null }}>{element.title}</h5>)
+                    arrOptions.map((element, index) => <h5 key={index} className="arrOptionsHover" tabIndex={index+1} style={{ paddingLeft: 16, color: index === 0 ? 'white' : null }}>{element.title}</h5>)
                     : null}
             </div>
 
-            <div tabindex="8" className='inner-container'>
+            <div tabIndex="8" className='inner-container'>
                 <div style={{ color: '#fff', fontSize: 20 }} ><i className="fa fa-search" ></i></div>
                 <h5 style={{ paddingLeft: 16, color: '#fff' }}>{selectedProfile.title}</h5>
                 <div style={{ color: '#fff', fontSize: 20, paddingLeft: 16 }} ><i className="fa fa-bell" ></i></div>
