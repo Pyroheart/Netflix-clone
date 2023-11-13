@@ -12,7 +12,7 @@ function Navbar({selectedProfile}) {
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {
-        const onScroll = () => setOffset(window.pageYOffset);
+        const onScroll = () => setOffset(window.scrollY);
         // clean up code
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
