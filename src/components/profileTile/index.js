@@ -11,7 +11,7 @@ export default function ProfileTile({ title, asset, onPressTile }) {
         <img
           onClick={() => onPressTile({ title, asset })}
           className='profile-tile'
-          aria-label="profile picture"
+          aria-label={"profile" + title}
           src={asset}
           alt="profile pic"
         />
